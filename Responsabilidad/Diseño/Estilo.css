@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex-direction: column; /* Alinear los textos en columna */
+    text-align: center; /* Alinear el texto en el centro */
+    background: linear-gradient(to bottom, black, white);
+    background-size: 200% 200%;
+    animation: backgroundAnimation 3s infinite linear;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 0% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.texto {
+    font-size: 5vw; /* Tamaño de fuente adaptable */
+    margin: 10px 0;
+    color: black; /* Color fijo para que resalte sobre el fondo */
+}
+
+img {
+    max-width: 100%; /* Ajustar imágenes al ancho del dispositivo */
+    height: auto; /* Mantener proporciones */
+}
